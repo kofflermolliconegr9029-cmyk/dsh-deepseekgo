@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Gomoku board">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8bd6d"/>
+      <stop offset="1" stop-color="#c08f3e"/>
+    </linearGradient>
+    <radialGradient id="black-stone" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#6a6a6a"/>
+      <stop offset="0.45" stop-color="#232323"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <radialGradient id="white-stone" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.7" stop-color="#eceff2"/>
+      <stop offset="1" stop-color="#c3c8ce"/>
+    </radialGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="url(#wood)"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#8d6426" stroke-width="1.4"/>
+  <g stroke="#7a5520" stroke-width="1" opacity="0.85">
+    <path d="M14 10V54M22 10V54M30 10V54M38 10V54M46 10V54M54 10V54"/>
+    <path d="M10 14H54M10 22H54M10 30H54M10 38H54M10 46H54"/>
+  </g>
+  <circle cx="30" cy="30" r="1.6" fill="#7a5520"/>
+  <circle cx="22" cy="38" r="7" fill="url(#black-stone)"/>
+  <circle cx="38" cy="22" r="7" fill="url(#white-stone)" stroke="#aeb5bd" stroke-width="0.8"/>
+</svg>

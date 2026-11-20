@@ -1,0 +1,9 @@
+# dsh-deepseekgo bundle patch
+#
+# One Host row. It mounts the Host half (Web API + the gomoku_play tool) and
+# the Client half declared by package.json's `dsh.client` section (the board
+# UI in `conversation.input.dock`). The profile lists this bundle in
+# `dsh.profile.bundles`; `plugin_manager install_bundle` does that.
+- insert:
+    - id: dsh-deepseekgo
+      name: dsh-deepseekgo

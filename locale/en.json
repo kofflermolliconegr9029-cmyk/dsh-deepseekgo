@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek Go · Gomoku",
+    "description": "Play Gomoku (five in a row) against the model on a board docked above the composer. Your moves are written into the conversation, the model answers with the gomoku_play tool, and the board is rebuilt from the session log. Unofficial community plugin — Gomoku, not the board game Go."
+  }
+}

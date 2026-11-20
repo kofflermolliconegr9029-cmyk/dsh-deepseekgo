@@ -1,0 +1,64 @@
+{
+  "name": "dsh-deepseekgo",
+  "version": "0.1.0",
+  "description": "Play Gomoku (five in a row) against the model in DeepSeek Harness: a board docked above the composer, moves carried by the session log, the model answers through a tool.",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kofflermolliconegr9029-cmyk/dsh-deepseekgo.git"
+  },
+  "homepage": "https://github.com/kofflermolliconegr9029-cmyk/dsh-deepseekgo#readme",
+  "bugs": {
+    "url": "https://github.com/kofflermolliconegr9029-cmyk/dsh-deepseekgo/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "PUBLISHING.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis-plugin",
+    "gomoku",
+    "five-in-a-row",
+    "board-game",
+    "game"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "manifestVersion": 1
+  }
+}
+
